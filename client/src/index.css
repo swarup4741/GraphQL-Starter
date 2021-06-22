@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #eee;
+    font-family: sans-serif;
+}
+#main {
+    margin: 5px;
+    padding: 5px;
+}
+h1 {
+    margin: 5px 10px;
+    padding: 5px;
+    font-size: 32px;
+}
+#book-list-wrapper {
+    width: 60%;
+}
+#book-list {
+    margin: 5px 10px;
+    max-height: 240px;
+    overflow-y: scroll;
+}
+#collection {
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    color: white;
+    cursor: pointer;
+    background: teal;
+    margin: 5px;
+    display: inline-block;
+}
+#book-details-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40%;
+    padding: 30px;
+    background: teal;
+    box-shadow: -2px 0px 6px rgba(0, 0, 0, 0.4);
+}
+#book-details-wrapper h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 10px 30px 10px;
+    text-decoration: underline;
+}
+#book-details-wrapper h3 {
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 10px;
+}
+#book-details p,
+#book-details-wrapper p {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin: 10px;
+}
+#book-details ul {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+#books {
+    list-style: url("https://icons.iconarchive.com/icons/paomedia/small-n-flat/16/book-icon.png");
+    margin: 5px;
+    color: white;
+    font-weight: 600;
+}
+#add-book {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 10px 25px;
+    padding: 15px 30px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    background: white;
+}
+#add-book div {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+#add-book label {
+    font-weight: 600;
+    color: rgb(0, 56, 56);
+}
+#add-book input {
+    padding: 5px 10px;
+    width: 200px;
+    margin-top: 3px;
+}
+#add-book input:focus {
+    border: 2px solid rgb(0, 148, 148);
+    outline: none;
+    border-radius: 3px;
+}
+#add-book select {
+    margin-top: 5px;
+}
+#add-book button {
+    padding: 8px 25px;
+    background: teal;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease;
+}
+#add-book button:active {
+    box-shadow: none;
+}
