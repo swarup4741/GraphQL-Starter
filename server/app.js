@@ -9,7 +9,7 @@ const app = express()
 app.use(cors())
 
 mongoose.connect(
-    "mongodb+srv://swarup:test1234@graphql-starter.bfewk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "mongodb+srv://*****:******@graphql-starter.bfewk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
     { useNewUrlParser: true, useUnifiedTopology: true }
 )
 mongoose.connection.once("open", () => {
